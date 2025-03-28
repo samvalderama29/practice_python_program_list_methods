@@ -20,6 +20,6 @@ for i in range(len(word)): # Using len() to determine string length
 
 # Print the result
 if all_upper:
-    print("All words are in upper case format")
+    print("True")
 else:
-    print("Input is incorrect! Characters must be all in capital letter")
+    print("False")
