@@ -5,3 +5,7 @@ print("Remove characters at the beginning of the string without using removepref
 word = input("Enter a word: ")
 
 prefixword = input("Type the word you want to remove from the start of the string: ")
+
+finalword = word.strip(prefixword)
+
+print(finalword)
