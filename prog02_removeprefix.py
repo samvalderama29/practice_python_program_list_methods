@@ -13,4 +13,4 @@ prefixword = input("Enter the prefix you want to remove from the string: ")
 finalword = word.strip(prefixword)
 
 # Print the final result
-print(finalword)
+print(f"String after prefix removal: {finalword}")
