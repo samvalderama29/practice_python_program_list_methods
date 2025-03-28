@@ -2,4 +2,4 @@
 
 print("Remove space characters at the beginning of the string without using lstrip()")
 
-word = int(input("Enter a word (include spaces at the beginning): "))
+word = input("Enter a word (include spaces at the beginning): "))
