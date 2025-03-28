@@ -5,7 +5,12 @@ print("Add space at the beginning and end of the string without using center()")
 
 word = input("Enter a word: ")
 
-space_1 = "     "
-space_2 = "     "
+count_space = int(input("Enter a number: "))
 
-print(space_1 + word + space_2)
+if len(word) >= count_space:
+    print("Invalid. The word is too long to be centered")
+else:
+    total_spaces = count_space - len(word)
+    left_spaces = total_spaces // 2
+    centered_word = word.rjust(len(word) + left_spaces).ljust(count_space)
+    print(f"Centered string: '{centered_word}'")
