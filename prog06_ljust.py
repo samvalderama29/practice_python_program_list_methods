@@ -6,8 +6,6 @@ word = input("Enter a word: ")
 
 count_characters = int(input("Enter a number to specify the function parameter: "))
 
-space_word = count_characters * " "
-
 if len(word) >= count_characters:
     print("Insuffiecient space. Input a bigger number for function parameter")
 else:
