@@ -4,11 +4,11 @@ print("Remove space at the end of the string without using rstrip()")
 
 word = input("Enter a word (include spaces at the end): ")
 
-space = 0
+space = len(word) - 1
 
-while space < len(word) and word[space] in (" ", "\t"):
-    space =+ 1
+while space >= 0 and word[space] in (" ", "\t"):
+    space =- 1
 
-removespace = word[:space]
+removespace = word[:space + 1]
 
-print(f"String without ending spaces: {removespace})
+print(f"String without ending spaces: '{removespace}'")
