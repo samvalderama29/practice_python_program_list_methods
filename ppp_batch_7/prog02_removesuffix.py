@@ -17,6 +17,6 @@ suffixword_count = len(suffixword)
 # Check if the word ends with the given suffix
 if word[word_count - suffixword_count:] == suffixword:
     finalword = word[:word_count - suffixword_count] # Remove the suffix using slicing
-    print(f"String after suffix removal: {finalword}")
+    print(f"String after suffix removal: {finalword}") # Print final result
 else:
     print("Invalid suffix. The suffix you input cannot be found in the end of the word. Try again.")
