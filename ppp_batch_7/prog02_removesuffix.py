@@ -7,9 +7,10 @@ word = input("Enter a word: ")
 
 suffixword = input("Enter the suffix you want to remove from the string: ")
 
-word_length = word.strip(suffixword)
+word_count = len(word)
+suffixword_count = len(suffixword)
 
-if word_length in word:
+if suffixword[:word_count] == word[:word_count]:
     finalword = word.rstrip(suffixword)
     print(f"String after suffix removal: {finalword}")
 else:
