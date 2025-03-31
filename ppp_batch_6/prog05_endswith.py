@@ -1,7 +1,7 @@
 # Prog05: endswith() check if the string end part matches the function parameter. Create a program that do the same functionality without using endswith() function.
 
 # Print message that explains the purpose of the program
-print("Math the end part of the string without using endswith()")
+print("Find the end part of the string without using endswith()")
 
 # Get input from the user
 word = input("Enter a word: ")
