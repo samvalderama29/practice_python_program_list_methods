@@ -8,3 +8,10 @@ endword = input("Enter the last letters of the word you input: ")
 
 initial_countword = len(word)
 final_countword = len(endword)
+
+equal_word_prefix = word[:final_countword - initial_countword]
+
+if equal_word_prefix == endword:
+    print("The words end with the given prefix")
+else:
+    print("The word does not start with the given prefix")
