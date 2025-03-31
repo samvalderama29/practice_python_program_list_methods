@@ -5,4 +5,11 @@ print("Return the first location of the string without using index()")
 
 word = input("Enter a word: ")
 
+find_letter = input("Enter a letter you want to find")
+
 word_position = -1
+
+for i in range(len(word)):
+    if word[i] == find_letter:
+        position = i
+        break
