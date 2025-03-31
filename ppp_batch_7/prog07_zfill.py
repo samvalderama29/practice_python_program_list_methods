@@ -10,11 +10,9 @@ user_number_count = (input("Enter a number to specify the function parameter: ")
 user_number_length = len(user_number)
 user_number_count_length = len(user_number_count)
 
-zerofill_count = 0
+final_zero = user_number_length - user_number_count_length
 
-if user_number_count >= user_number:
+if user_number_count_length >= user_number_length:
     print("Insufficient space. Input a bigger number for function parameter")
 else:
-    zerofill_count += 1
-
-print(f"Final output of number with zeros: {zerofill_count}")
+    print(f"{(final_zero * "0") + user_number}")
