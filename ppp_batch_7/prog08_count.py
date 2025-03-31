@@ -6,3 +6,13 @@ word = input("Enter a word: ")
 
 find_letter = input("Enter a letter you want to find in the word: ")
 
+letter_count = 0
+
+for i in range(len(word)):
+    if word[i] == find_letter:
+        letter_count += 1
+    else:
+        print(f"The letter '{find_letter}' cannot be found in {word}")
+    break
+
+print(f"The amount of time '{find_letter}' appear on '{word}': {letter_count}")
