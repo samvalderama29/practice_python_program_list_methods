@@ -4,14 +4,14 @@
 print("Find the beginning part of the string without using startswith()")
 
 word = input("Enter a word: ")
-endword = input("Enter the last letters of the word you input: ")
+startword = input("Enter the first letters of the word you input: ")
 
 initial_countword = len(word)
-final_countword = len(endword)
+final_countword = len(startword)
 
 equal_word_prefix = word[:final_countword - initial_countword]
 
-if equal_word_prefix == endword:
+if equal_word_prefix == startword:
     print("The words end with the given prefix")
 else:
     print("The word does not start with the given prefix")
