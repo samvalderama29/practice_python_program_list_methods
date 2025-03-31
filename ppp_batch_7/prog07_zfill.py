@@ -5,14 +5,10 @@ print("Add zero without using zfill()")
 
 user_number = (input("Enter a number: "))
 
-user_number_count = (input("Enter a number to specify the function parameter: "))
+user_number_count = int(input("Enter a number to specify the function parameter: "))
 
-user_number_length = len(user_number)
-user_number_count_length = len(user_number_count)
-
-final_zero = user_number_length - user_number_count_length
-
-if user_number_count_length >= user_number_length:
+if len(user_number) >= user_number_count:
     print("Insufficient space. Input a bigger number for function parameter")
 else:
-    print(f"{(final_zero * "0") + user_number}")
+    complete_zero = user_number_count - len(user_number)
+    print(f"String filled with zero characters: {("0" * complete_zero) + user_number}")
